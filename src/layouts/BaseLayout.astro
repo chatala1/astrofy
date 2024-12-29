@@ -20,6 +20,11 @@ const {
 <!doctype html>
 <html lang="en" data-theme="lofi">
   <head>
+    <script>
+              function toggleDarkMode() {
+                  document.body.classList.toggle('dark-mode');
+              }
+     </script>
     <BaseHead title={title} description={description} image={image} , ogType={ogType} />
     {TRANSITION_API && <ViewTransitions />}
   </head>
@@ -34,11 +39,7 @@ const {
             <slot />
           </main>
         </div>
-          <script>
-              function toggleDarkMode() {
-                  document.body.classList.toggle('dark-mode');
-              }
-          </script>
+          
         <Footer />
       </div>
       {includeSidebar && <SideBar sideBarActiveItemID={sideBarActiveItemID} />}
