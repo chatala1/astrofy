@@ -1,3 +1,36 @@
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
 }
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #6200ee;
+    --secondary-color: #03dac6;
+}
+
+.dark-mode {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --primary-color: #bb86fc;
+    --secondary-color: #03dac6;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.badge-secondary {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+}
+
+/* Existing styles */
+.time-line-container>div:last-child .education__time>.education__line {
+    display: none;
+}
