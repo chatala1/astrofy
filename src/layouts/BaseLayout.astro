@@ -27,12 +27,18 @@ const {
     <div class="bg-base-100 drawer lg:drawer-open">
       <input id="my-drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content bg-base-100">
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <Header title={SITE_TITLE} />
         <div class="md:flex md:justify-center">
           <main class="p-6 pt-10 lg:max-w-[900px] max-w-[100vw]">
             <slot />
           </main>
         </div>
+          <script>
+              function toggleDarkMode() {
+                  document.body.classList.toggle('dark-mode');
+              }
+          </script>
         <Footer />
       </div>
       {includeSidebar && <SideBar sideBarActiveItemID={sideBarActiveItemID} />}
