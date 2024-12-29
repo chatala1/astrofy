@@ -22,11 +22,6 @@ const {
   <head>
     <BaseHead title={title} description={description} image={image} , ogType={ogType} />
     {TRANSITION_API && <ViewTransitions />}
-      <script>
-          function toggleDarkMode() {
-              document.body.classList.toggle('dark-mode');
-          }
-      </script>
   </head>
   <body>
     <div class="bg-base-100 drawer lg:drawer-open">
@@ -41,7 +36,6 @@ const {
         <Footer />
       </div>
       {includeSidebar && <SideBar sideBarActiveItemID={sideBarActiveItemID} />}
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     </div>
   </body>
 </html>
