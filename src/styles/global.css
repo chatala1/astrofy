@@ -11,7 +11,7 @@
 // <weight>: Use a value from 100 to 900
 
 h1, h2, h3, h4, p, a {
-    font-family: "Inter", serif;
+    font-family: "Inter", serif !important;
     font-optical-sizing: auto; 
 }
 
