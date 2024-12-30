@@ -5,6 +5,10 @@ import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
 import stylesheet from "../styles/global.css";
 
+const toggleDarkMode = () => {
+    document.body.classList.toggle('dark-mode');
+};
+
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const last_posts = posts.slice(0, 3);
