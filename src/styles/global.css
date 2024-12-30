@@ -26,6 +26,13 @@
   font-style: normal;
 }
 
+.inter-med {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
 /* Normal Font Collection */
 .inter-Normal {
   font-family: "Inter", serif;
