@@ -15,6 +15,9 @@ const {
   sideBarActiveItemID,
   ogType,
 } = Astro.props;
+const toggleDarkMode = () => {
+    document.body.classList.toggle('dark-mode');
+};
 ---
 
 <!doctype html>
