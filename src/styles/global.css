@@ -10,6 +10,11 @@
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900
 
+h1, h2, h3, h4, p, a {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto; 
+}
+
 /* Page Title */
 .inter-Title {
   font-family: "Inter", serif;
