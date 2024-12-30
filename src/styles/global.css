@@ -10,9 +10,47 @@
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900
 
+/* Page Title */
 .inter-Title {
   font-family: "Inter", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: medium;
+  font-size: 32px; /* Example size for page title */
+}
+
+/* H1 */
+.inter-H1 {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px; /* Example size for H1 */
+}
+
+/* H2 */
+.inter-H2 {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px; /* Example size for H2 */
+}
+
+/* H3 */
+.inter-H3 {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px; /* Example size for H3 */
+}
+
+/* Normal Font Collection */
+.inter-Normal {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px; /* Example size for normal text */
 }
