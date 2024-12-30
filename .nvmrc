@@ -1,5 +1,1 @@
-# Specify the Node.js version
-18
 
-# Expose Astro dependencies for `pnvm` users
-shamefully-hoist=true
