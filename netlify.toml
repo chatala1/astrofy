@@ -1,0 +1,13 @@
+[build]
+  publish = "dist"
+  command = "pnpm run build"
+
+[context.production]
+  environment = { 
+    NODE_VERSION = "18"
+  }
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
