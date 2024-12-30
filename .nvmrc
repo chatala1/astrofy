@@ -1,1 +1,2 @@
-
+# Expose Astro dependencies for `pnvm` users
+shamefully-hoist=true
