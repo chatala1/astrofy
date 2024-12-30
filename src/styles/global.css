@@ -7,4 +7,12 @@
     -o-object-fit: contain !important;
     object-fit: contain !important;
 }
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
 
+.inter-Title {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: medium;
+}
