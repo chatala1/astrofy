@@ -2,7 +2,7 @@
 title: "Decoding Russia’s Telegram Propaganda Ecosystem"
 description: "An in-depth analysis reveals a vast network of pro-Russia propaganda channels on the messaging platform Telegram, illustrating the evolving nature of state-sponsored narrative attacks and narrative attack campaigns."
 pubDate: "Sep 10 2022"
-heroImage: "/post_img.webp"
+heroImage: "/telegram_blackbird-ai.jpeg"
 tags: ["Russia"]
 link: "https://blackbird.ai/blog/russia-telegram-propaganda-disinformation/"
 ---
