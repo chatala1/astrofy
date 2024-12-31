@@ -1,9 +1,10 @@
 ---
-title: "Demo Post 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+title: "Decoding Russia’s Telegram Propaganda Ecosystem"
+description: "An in-depth analysis reveals a vast network of pro-Russia propaganda channels on the messaging platform Telegram, illustrating the evolving nature of state-sponsored narrative attacks and narrative attack campaigns."
 pubDate: "Sep 10 2022"
 heroImage: "/post_img.webp"
-tags: ["tokio"]
+tags: ["Russia"] ["Repost"]
+link: "https://blackbird.ai/blog/russia-telegram-propaganda-disinformation/"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
