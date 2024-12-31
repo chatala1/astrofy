@@ -46,3 +46,7 @@ h1, h2, h3, h4, p, a {
   font-style: normal;
   font-size: 16px; /* Example size for normal text */
 }
+
+span.font-light.text-sm {
+    color: #555;
+}
