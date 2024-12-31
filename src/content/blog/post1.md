@@ -4,7 +4,7 @@ description: "An in-depth analysis reveals a vast network of pro-Russia propagan
 pubDate: "Sep 10 2022"
 heroImage: "/telegram_blackbird-ai.jpg"
 tags: ["Russia"]
-link: "https://blackbird.ai/blog/russia-telegram-propaganda-disinformation/"
+url: "https://blackbird.ai/blog/russia-telegram-propaganda-disinformation/"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
