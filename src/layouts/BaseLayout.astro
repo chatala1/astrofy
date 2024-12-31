@@ -26,7 +26,12 @@ const {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  </head>
+    <script>
+          function getIP(json) {
+            document.getElementById("greeting").innerHTML += json.ip;
+          }
+        </script>
+</head>
   <body>
     <div class="bg-base-100 drawer lg:drawer-open">
       <input id="my-drawer" type="checkbox" class="drawer-toggle" />
