@@ -9,10 +9,6 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueO
 
 const last_posts = posts.slice(0, 3);
 
-function getIP(data) {
-    console.log("IP Address: ", data.ip);
-    document.getElementById("ip-display").innerText = `Your IP Address is: ${data.ip}`;
-}
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -29,7 +25,7 @@ function getIP(data) {
     </div>
     <!--<div class="text-xl py-1">Chad says... 👋</div>-->
     <!--<div class="text-5xl font-bold">Hello, World!</div>-->
-    <div class="text-3xl py-3 inter-title" id="greeting">Hello, /div>
+    <div class="text-3xl py-3 inter-title" id="greeting">Hello, </div>
     <div class="py-2">
       <text class="text-lg inter-Normal">
         I am driven and passionate about safeguarding people's privacy and security, including their personal well-being.
