@@ -11,7 +11,7 @@ const last_posts = posts.slice(0, 3);
 
 function getIP(data) {
     console.log("IP Address: ", data.ip);
-    document.getElementById("ip-display").innerText = `${data.ip}`;
+    document.getElementById("ip-display").innerText = `Your IP Address is: ${data.ip}`;
 }
 ---
 
@@ -29,11 +29,12 @@ function getIP(data) {
     </div>
     <!--<div class="text-xl py-1">Chad says... 👋</div>-->
     <!--<div class="text-5xl font-bold">Hello, World!</div>-->
-    <div class="text-3xl py-3 inter-title" id="greeting">Hello, <p id="ip-display"></p></div>
+    <div class="text-3xl py-3 inter-title" id="greeting">Hello, <span id="ip-display"></span></div>
     <!--- Scripts -->
       <script>
           function getIP(data) { 
-              console.log(data); 
+              console.log("IP Address: ", data.ip);
+              document.getElementById("ip-display").innerText = `Your IP Address is: ${data.ip}`;
         }
       </script>
       <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
