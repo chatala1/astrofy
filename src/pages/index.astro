@@ -10,7 +10,8 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueO
 const last_posts = posts.slice(0, 3);
 
 function getIP(data) {
-    console.log(data);
+    console.log("IP Address: ", data.ip);
+    document.getElementById("ip-display").innerText = `${data.ip}`;
 }
 ---
 
@@ -28,7 +29,7 @@ function getIP(data) {
     </div>
     <!--<div class="text-xl py-1">Chad says... 👋</div>-->
     <!--<div class="text-5xl font-bold">Hello, World!</div>-->
-    <div class="text-3xl py-3 inter-title" id="greeting">Hello, </div>
+    <div class="text-3xl py-3 inter-title" id="greeting">Hello, <p id="ip-display"></p></div>
     <!--- Scripts -->
       <script>
           function getIP(data) { 
