@@ -13,6 +13,8 @@ import { Image } from "astro:assets";
           {badge && <div class="badge badge-secondary">{badge}</div>}
         </h2>
         <p>{desc}</p>
+        <br>
+        <p>{url}</p>
         <div class="card-actions justify-end">
           {tags && tags.map((tag) => <div class="badge badge-outline">{tag}</div>)}
         </div>

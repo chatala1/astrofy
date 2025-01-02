@@ -25,9 +25,9 @@ const { page } = Astro.props;
 const params = Astro.params;
 ---
 
-<BaseLayout title={"Blog - " + params.tag} sideBarActiveItemID="blog">
+<BaseLayout title={"Stream - " + params.tag} sideBarActiveItemID="blog">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Blog - {params.tag}</div>
+    <div class="text-3xl w-full font-bold">Stream - {params.tag}</div>
   </div>
   {
     page.data.length === 0 ? (
@@ -43,10 +43,12 @@ const params = Astro.params;
               title={post.data.title}
               img={post.data.heroImage}
               desc={post.data.description}
-              url={"/blog/" + createSlug(post.data.title, post.slug)}
+              // url={"/blog/" + createSlug(post.data.title, post.slug)}
+              url={post.data.url}
               target="_self"
               badge={post.data.badge}
               tags={post.data.tags}
+              link={post.data.link}
             />
             <div class="divider my-0" />
           </>
