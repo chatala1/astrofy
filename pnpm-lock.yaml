@@ -3,12 +3,6 @@ dependencies:
     dependencies:
       load-yaml-file: 0.2.0
       path-exists: 4.0.0
-  which@2.0.2:
-    dependencies:
-      isexe: 2.0.0
-  widest-line@4.0.1:
-    dependencies:
-      string-width: 5.1.2
   '@astrojs/mdx':
     specifier: ^2.0.3
     version: 2.0.3(astro@4.16.18(rollup@4.29.1)(typescript@5.7.2))
@@ -41,25 +35,3 @@ dependencies:
       ansi-styles: 6.2.1
       string-width: 5.1.2
       strip-ansi: 7.1.0
-  wrappy@1.0.2: {}
-  yallist@4.0.0: {}
-  yaml@2.3.4: {}
-  '@astrojs/compiler@2.10.3':
-    resolution: { integrity: sha512-bL/O7YBxsFt55YHU021oL+xz+BB/9HvGNId3F9xURN16aeqDK9juHGktdkCSXz+U4nqFACq6ZFvWomOzhV+zfPw== }
-  '@astrojs/internal-helpers@0.4.1':
-    resolution: { integrity: sha512-bMf9jFihO8YP940uD70SI/RDzIhUHJAolWVcO1v5PUivxGKvfLZTLTVVxEYzGYyPsA3ivdLNqMnL5VgmQySa+g== }
-  '@astrojs/markdown-remark@4.0.1':
-    resolution: { integrity: sha512-RU4ESnqvyLpj8WZs0n5elS6idaDdtIIm7mIpMaRNPCebpxMjfcfdwcmBwz83ktAj5d2eO5bC3z92TcGdli+BlRw== }
-  '@astrojs/markdown-remark@5.3.0':
-    resolution: { integrity: sha512-r0Ikqr0e6ozPb5bvhup1qdWnSPUvQu6tub4ZLYaKyG50BXZ0ej6FhGz3GpChKpH7kglRFPObJd/bDyf2VM9pkg== }
-  '@astrojs/mdx@2.0.3':
-    resolution: { integrity: sha512-wFjQX5CihU5B4UAQNwc2R48ph0flpc6/yvDCFANE0agtgI2+BaVcAjuW0EhGOQCZ65dQDqnFKE0lvGs7EADYpg== }
-    engines: { node: '>=18.14.1' }
-    peerDependencies:
-      astro: ^4.0.0
-  '@astrojs/prism@3.0.0':
-    resolution: { integrity: sha512-g61lZupWq1bYbcBnYZqdjndShr/J3l/oFobBKPA3+qMat146zce3nz2kdO4giGbhYDt4gYdhmoBz0vZJ4sIurQ== }
-    engines: { node: '>=18.14.1' }
-  '@tailwindcss/typography':
-    specifier: ^0.5.10
-    version: 0.5.10(tailwindcss@3.3.5)
