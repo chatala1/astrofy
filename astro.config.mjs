@@ -9,3 +9,11 @@ export default defineConfig({
   output: "hybrid",
   integrations: [mdx(), sitemap(), tailwind()]
 });
+
+export async function getStaticPaths() {
+  return {
+    paths: [],
+    fallback: 'blocking', // or true
+  };
+}
+
