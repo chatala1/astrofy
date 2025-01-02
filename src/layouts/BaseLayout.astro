@@ -15,14 +15,19 @@ const {
   sideBarActiveItemID,
   ogType,
 } = Astro.props;
+
 ---
 
 <!doctype html>
-<html lang="en" data-theme="lofi">
+<html lang="en" data-theme="black">
   <head>
     <BaseHead title={title} description={description} image={image} , ogType={ogType} />
     {TRANSITION_API && <ViewTransitions />}
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+</head>
   <body>
     <div class="bg-base-100 drawer lg:drawer-open">
       <input id="my-drawer" type="checkbox" class="drawer-toggle" />
@@ -37,6 +42,7 @@ const {
         <Footer />
       </div>
       {includeSidebar && <SideBar sideBarActiveItemID={sideBarActiveItemID} />}
+      
     </div>
   </body>
 </html>

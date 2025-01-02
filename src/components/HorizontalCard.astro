@@ -1,13 +1,22 @@
 ---
 const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
 import { Image } from "astro:assets";
-const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
+const tag_url = url ? url.split("/").slice(0, -1).join("/") + "/tag" : "";
+const isValidUrl = (url) => {
+  try {
+    new URL(url);
+    return true;
+  } catch (_) {
+    return false;
+  }
+};
+const safeUrl = url && isValidUrl(url) ? url : "#";
 ---
 
 <div
   class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]"
 >
-  <a href={url} target={target}>
+  <a href={safeUrl} target={target}>
     <div class="hero-content flex-col md:flex-row">
       {
         img && (
@@ -22,11 +31,13 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
         )
       }
       <div class="grow w-full">
-        <h1 class="text-xl font-bold">
+        <h1 class="text-xl font-bold inter-med">
           {title}
-          {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
+          {badge && <div class="badge badge-secondary mx-2 inter-Normal">{badge}</div>}
         </h1>
         <p class="py-1 text-1xl">{desc}</p>
+        <br>
+        <p class="py-1 text-1xl">{safeUrl}</p>
         <div class="card-actions justify-end">
           {
             tags &&
