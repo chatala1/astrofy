@@ -5,7 +5,7 @@ import tailwind from '@astrojs/tailwind';
 import netlify from '@astrojs/netlify/functions';
 
 export default defineConfig({
-  site: 'https://chadhatala.netlify.app',
-  output: 'hybrid'
+  site: 'https://your-site.netlify.app',
+  output: 'hybrid', // or 'server'
   integrations: [mdx(), sitemap(), tailwind(), netlify()]
 });
