@@ -4,12 +4,10 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug";
 import stylesheet from "../styles/global.css";
-import { getUserIP } from "../lib/getUserIP";
 
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const last_posts = posts.slice(0, 3);
 
-const userIP = await getUserIP(Astro.request);
 
 ---
 
@@ -17,7 +15,7 @@ const userIP = await getUserIP(Astro.request);
   <div class="pb-12 mt-5">
     <div class="mt-8">
       <a class="btn" href="https://chadhatala.netlify.app" target="_blank">SMTP</a>
-      <!--<a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
+      <!--<a href="https://github.com/" target="_blank" class="btn btn-outline ml-5">
         Get This template
       </a>-->
     </div>
@@ -27,7 +25,7 @@ const userIP = await getUserIP(Astro.request);
     </div>
     <!--<div class="text-xl py-1">Chad says... 👋</div>-->
     <!--<div class="text-5xl font-bold">Hello, World!</div>-->
-    <div class="text-3xl py-3 inter-title" id="greeting">Hello, {userIP}</div>
+    <div class="text-3xl py-3 inter-title" id="greeting">Hello, User</div>
     <div class="py-2">
       <text class="text-lg inter-Normal">
         I am driven and passionate about safeguarding people's privacy and security, including their personal well-being.
